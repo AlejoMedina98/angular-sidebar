@@ -1,0 +1,28 @@
+div.app-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: lightgrey;
+    max-height: 1.6em;
+    
+    div.row {
+        div.col:nth-child(1) {
+            border-right: 2px solid #b2bec3;
+            padding: 2px 30px;
+        }
+        div.col:last-child {
+            padding-top: 2px;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    div.app-footer {
+        div.row {
+            div.col:nth-child(1) {
+                padding: 2px 20px;
+            }
+        }
+    }
+}
