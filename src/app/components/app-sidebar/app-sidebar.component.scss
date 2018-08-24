@@ -1,5 +1,6 @@
 @import '~src/sass/variables';
 aside.app-sidebar {
+    position: fixed;
     width: $sidebar-width;
     height: 100vh;
     max-height: 100vh;
