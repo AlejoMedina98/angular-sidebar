@@ -5,7 +5,17 @@ import { FullLayoutComponent } from './containers/full-layout/full-layout.compon
 const routes: Routes = [
   {
     path: '',
-    component: FullLayoutComponent
+    redirectTo: 'dashboard',
+    pathMatch: 'full'
+  },
+  {
+    path: 'dashboard',
+    component: FullLayoutComponent,
+    loadChildren: './modules/dashboard/dashboard.module#DashboardModule'
+  },
+  {
+    path: '**',
+    redirectTo: 'dashboard'
   }
 ];
 
