@@ -14,6 +14,11 @@ const routes: Routes = [
     loadChildren: './modules/dashboard/dashboard.module#DashboardModule'
   },
   {
+    path: 'about',
+    component: FullLayoutComponent,
+    loadChildren: './modules/about/about.module#AboutModule'
+  },
+  {
     path: '**',
     redirectTo: 'dashboard'
   }
