@@ -12,4 +12,8 @@ export class AppSidebarComponent implements OnInit {
   ngOnInit() {
   }
 
+  public routes = [
+    {name: 'Dashboard', icon: 'fa fa-dashboard', route: '/dashboard'},
+    {name: 'About', icon: 'fa fa-question-circle', route: '/about'}
+  ]
 }

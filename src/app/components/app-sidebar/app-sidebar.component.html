@@ -1,12 +1,12 @@
 <aside class="app-sidebar">
   <nav>
-    <ul>
-      <!-- <li>
-        <a>
-          <i class="fa fa-trophy"></i>
-          Something more
+    <ul *ngIf="routes && routes.length">
+      <li *ngFor="let route of routes">
+        <a [routerLink]="[route.route]">
+          <i [class]="route.icon"></i>
+          {{route.name}}
         </a>
-      </li> -->
+      </li>
     </ul>
   </nav>
 </aside>
