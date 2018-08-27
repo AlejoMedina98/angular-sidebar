@@ -1,8 +1,8 @@
 <aside class="app-sidebar">
   <nav>
     <ul *ngIf="routes && routes.length">
-      <li *ngFor="let route of routes">
-        <a [routerLink]="[route.route]">
+      <li *ngFor="let route of routes" [routerLink]="[route.route]">
+        <a>
           <i [class]="route.icon"></i>
           {{route.name}}
         </a>
